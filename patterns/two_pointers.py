@@ -1,13 +1,14 @@
-string = "pranjal"
-
-def reverse_string(string):
-    new_op = list(string)
+name = "pranjal"
+def reverse(name):
+    new_name = list(name)
     left = 0
-    right = len(new_op)-1
+    right = len(new_name)-1
     while(right>left):
-        new_op[left], new_op[right] = new_op[right],new_op[left]
-
+        new_name[left], new_name[right]= new_name[right], new_name[left]
         left+=1
         right-=1
-    return "".join(new_op)
-print(reverse_string(string))
+    return "".join(new_name)
+
+print(reverse(name))
+
+
